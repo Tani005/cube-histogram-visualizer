@@ -10,6 +10,8 @@ A 3-stage computer vision pipeline connecting 3D rendering, real-time image anal
 | 2 | C++ / OpenCV | Frame capture, HSV conversion, histogram computation |
 | 3 | Python / Matplotlib | Interactive 3D bar chart visualization |
 
+---
+
 ## Features
 
 - Rotating 3D cube with real images mapped onto each face (Blender)
@@ -22,9 +24,8 @@ A 3-stage computer vision pipeline connecting 3D rendering, real-time image anal
 
 ```
 cube-histogram-visualizer/
-├── src/
-│   ├── histogram.cpp       # OpenCV histogram computation
-│   └── visualize.py        # Matplotlib 3D visualization
+├── histogram.slnx          # OpenCV histogram computation (C++)
+├── plot_histogram.py       # Matplotlib 3D visualization (Python)
 ├── assets/
 │   └── demo.gif            # Demo recording
 └── README.md
@@ -45,13 +46,13 @@ Open your Blender scene, texture-map images onto the cube faces, and render the 
 
 **Step 2 – Compute histogram (C++)**
 ```bash
-g++ src/histogram.cpp -o histogram `pkg-config --cflags --libs opencv4`
+g++ histogram.slnx -o histogram `pkg-config --cflags --libs opencv4`
 ./histogram
 ```
 
 **Step 3 – Visualize (Python)**
 ```bash
-python src/visualize.py
+python plot_histogram.py
 ```
 
 ## Acknowledgements
