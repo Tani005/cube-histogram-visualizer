@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path="hist.cpp" />
+    <File Path="hist.h" />
+  </Folder>
+  <Project Path="histogram/histogram.vcxproj" Id="fc8e9477-495a-45ce-bc99-ac3d4ba124ea" />
+</Solution>
