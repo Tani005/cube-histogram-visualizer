@@ -2,10 +2,6 @@
 
 A 3-stage computer vision pipeline connecting 3D rendering, real-time image analysis, and interactive visualization.
 
-![Demo](assets/demo.gif)
-
----
-
 ## Pipeline
 
 | Stage | Tool | Role |
@@ -14,8 +10,6 @@ A 3-stage computer vision pipeline connecting 3D rendering, real-time image anal
 | 2 | C++ / OpenCV | Frame capture, HSV conversion, histogram computation |
 | 3 | Python / Matplotlib | Interactive 3D bar chart visualization |
 
----
-
 ## Features
 
 - Rotating 3D cube with real images mapped onto each face (Blender)
@@ -23,8 +17,6 @@ A 3-stage computer vision pipeline connecting 3D rendering, real-time image anal
 - Preprocessing pipeline: Gaussian Blur → HSV Color Space Conversion
 - Interactive 3D bar chart (Hue × Saturation × Frequency) via `mpl_toolkits.mplot3d`
 - Demonstrates how color histograms form sparse distributions in 3D space
-
----
 
 ## Project Structure
 
@@ -37,8 +29,6 @@ cube-histogram-visualizer/
 │   └── demo.gif            # Demo recording
 └── README.md
 ```
-
----
 
 ## Setup & Usage
 
@@ -63,14 +53,6 @@ g++ src/histogram.cpp -o histogram `pkg-config --cflags --libs opencv4`
 ```bash
 python src/visualize.py
 ```
-
----
-
-## Demo
-
-> Color histograms form sparse distributions in 3D space — bin frequencies visibly shift as the scene and dominant colors change across cube faces.
-
----
 
 ## Acknowledgements
 
