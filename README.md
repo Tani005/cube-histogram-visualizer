@@ -41,7 +41,7 @@ cube-histogram-visualizer/
 ### Run
 
 **Step 1 – Render frames in Blender**
-Open `blender/cube.blend` and render the animation.
+Open your Blender scene, texture-map images onto the cube faces, and render the animation.
 
 **Step 2 – Compute histogram (C++)**
 ```bash
@@ -57,8 +57,6 @@ python src/visualize.py
 ## Acknowledgements
 
 Developed under the guidance of **Prof. Maxwell Bruce** as part of Computer Vision coursework at **Northeastern University**.
-
----
 
 ## Tech Stack
 
